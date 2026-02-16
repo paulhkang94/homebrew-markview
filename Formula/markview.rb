@@ -5,7 +5,7 @@ class Markview < Formula
   sha256 "401214f9baee8a407def78d55e8756617ebbe207c8d6d0ebf3a9f8b5f3f30361"
   license "MIT"
 
-  depends_on xcode: ["15.0", :build]
+  depends_on xcode: :build
   depends_on :macos
 
   def install
