@@ -28,7 +28,7 @@ class Markview < Formula
   end
 
   test do
-    assert_predicate bin/"markview", :exist?
+    assert_path_exists bin/"markview"
     assert_predicate bin/"markview", :executable?
   end
 end
