@@ -1,0 +1,10 @@
+# REPL infrastructure
+.claude/
+CLAUDE.md
+
+# Environment
+.env
+.env.*
+
+# macOS
+.DS_Store
