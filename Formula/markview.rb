@@ -1,8 +1,8 @@
 class Markview < Formula
   desc "Native macOS markdown previewer with live reload, GFM, and syntax highlighting"
   homepage "https://paulkang.dev"
-  url "https://github.com/paulhkang94/markview/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "401214f9baee8a407def78d55e8756617ebbe207c8d6d0ebf3a9f8b5f3f30361"
+  url "https://github.com/paulhkang94/markview/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "509a6755e2833c5a0ab5036d21f0842f66c290a36d305081238b791cbfdecde4"
   license "MIT"
 
   depends_on :macos
