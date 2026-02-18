@@ -14,6 +14,13 @@ cask "markview" do
 
   app "MarkView.app"
 
+  postflight do
+    # Strip quarantine until app is notarized with Apple
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MarkView.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Preferences/com.markview.app.plist",
     "~/Library/Caches/com.markview.app",
