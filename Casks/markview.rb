@@ -1,8 +1,8 @@
 cask "markview" do
-  version "1.1.3"
-  sha256 "fe746f76ab06ad3deff2add1c03e7b2eba478e26f64d6aa94733e579789bea8a"
+  version "1.2.3"
+  sha256 "ee094b5dee2aea7697141a8a75ed2b7d97d59208bc9bef6b0658befad54146b1"
 
-  url "https://github.com/paulhkang94/markview/releases/download/v#{version}/MarkView-#{version}.tar.gz"
+  url "https://github.com/paulhkang94/markview/releases/download/v#{version}/MarkView-#{version}.zip"
   name "MarkView"
   desc "Native macOS markdown previewer with live reload, GFM, and syntax highlighting"
   homepage "https://github.com/paulhkang94/markview"
@@ -13,13 +13,6 @@ cask "markview" do
   end
 
   app "MarkView.app"
-
-  postflight do
-    # Strip quarantine until app is notarized with Apple
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MarkView.app"],
-                   sudo: false
-  end
 
   zap trash: [
     "~/Library/Preferences/com.markview.app.plist",
