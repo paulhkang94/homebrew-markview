@@ -1,6 +1,6 @@
 cask "markview" do
-  version "1.2.4"
-  sha256 "41e4b95c259ee6b203e3878c38aecf8a743eb62f8754737bf0e05d8ccf38f634"
+  version "1.2.5"
+  sha256 "fd9026799d4de710f00015b9385e62cf5f6b8d33dc16b931b57ccf5d7a67889f"
 
   url "https://github.com/paulhkang94/markview/releases/download/v#{version}/MarkView-#{version}.zip"
   name "MarkView"
